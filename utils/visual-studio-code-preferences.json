@@ -1,0 +1,15 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.fontSize": 13,
+    "editor.tabSize": 2,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+    "files.exclude": {
+        "node_modules": false
+    },
+    "emmet.syntaxProfiles": {
+      "css":"css"
+    },
+    "workbench.editor.enablePreview": false,
+    "window.zoomLevel": 0
+  }
