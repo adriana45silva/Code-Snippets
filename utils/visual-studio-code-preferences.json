@@ -2,6 +2,8 @@
 {
     "editor.fontSize": 13,
     "editor.tabSize": 2,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,    
     "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
     "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
     "files.exclude": {
@@ -9,7 +11,7 @@
     },
     "emmet.syntaxProfiles": {
       "css":"css"
-    },
+    },    
     "workbench.editor.enablePreview": false,
     "window.zoomLevel": 0
   }
