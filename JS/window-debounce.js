@@ -1,10 +1,14 @@
-// Window debounce - check if user is resizing the screen
-
-var resizeTimer;
-
-window.addEventListener('resize', (event) => {
-  clearTimeout(resizeTimer);
-  resizeTimer = setTimeout ( () => {
-    console.log('resizing!')
-  }, 250);
-});
+export const debounce = (func, wait, immediate) => {
+  let timeout;
+  return (...funcArgs) => {
+    let args = funcArgs;
+    let later = function() {
+      timeout = null;
+      if (!immediate) func.apply(this, args);
+    };
+    let callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (callNow) func.apply(this, args);
+  };
+};

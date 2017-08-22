@@ -1,4 +1,4 @@
-  var isValidCPF = ( strCPF ) => {
+  export const isValidCPF = ( strCPF ) => {
     var sum;
     var remain;
     var i;
