@@ -28,6 +28,11 @@ alias gcoa="git commit --amend --author='Adriana Silva <adriana45silva@gmail.com
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 
+# keep history for each tab on terminal
+export HISTFILE="$HOME/.bash_history_$TERM_SESSION_ID"
+if [ ! -e $HISTFILE ]; then cp "$HOME/.bash_history" "$HISTFILE"; fi
+
+
 function _line(){
 echo "..........................................................................."
 }
